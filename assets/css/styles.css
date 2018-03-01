@@ -1,0 +1,175 @@
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+html,
+body,
+#intro {
+  height: 100vh; }
+
+html,
+body,
+div,
+span,
+a,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  text-rendering: optimizeLegibility; }
+
+body {
+  background: #000000;
+  color: #FFFFFF; }
+
+a {
+  cursor: pointer;
+  text-decoration: none;
+  outline: 0; }
+
+@font-face {
+  font-family: "BryantLight";
+  font-style: normal;
+  font-weight: 100;
+  src: url("../fonts/Bryant/BryantLight.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BryantLightAlt";
+  font-style: normal;
+  font-weight: 200;
+  src: url("../fonts/Bryant/BryantLightAlt.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BryantRegular";
+  font-style: normal;
+  font-weight: 300;
+  src: url("../fonts/Bryant/BryantRegular.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BryantRegularAlt";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Bryant/BryantRegularAlt.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BryantMedium";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/Bryant/BryantMedium.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BryantMediumAlt";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Bryant/BryantMediumAlt.ttf") format("truetype"); }
+
+@font-face {
+  font-family: "BryantBoldAlt";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/Bryant/BryantBoldAlt.ttf") format("truetype"); }
+
+#intro {
+  /* Background Image */
+  background-image: url("../../assets/img/space.jpg");
+  /* Full height */
+  height: 900px;
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
+  #intro .nav {
+    overflow: hidden;
+    background: transparent;
+    padding: 30px; }
+    #intro .nav a {
+      color: #fff;
+      text-transform: uppercase; }
+    #intro .nav .logo {
+      margin-left: 30px;
+      float: left; }
+      #intro .nav .logo a {
+        letter-spacing: 5px;
+        font-size: 25px; }
+    #intro .nav .nav_items {
+      margin-right: 30px;
+      float: right; }
+      #intro .nav .nav_items a {
+        font-size: 15px;
+        margin-left: 30px; }
+  #intro .text_head {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase; }
+    #intro .text_head h1 {
+      font-size: 110px;
+      font-weight: 700; }
+    #intro .text_head p {
+      font-size: 30px;
+      font-weight: 200; }
+  #intro .circle {
+    position: absolute;
+    bottom: -50px;
+    left: 80px;
+    height: 60px;
+    width: 60px;
+    border: 2px solid gold;
+    border-radius: 50%; }
+    #intro .circle .play {
+      margin-top: 10px;
+      margin-left: 19px;
+      font-size: 28px;
+      vertical-align: center;
+      color: #fff; }
+  #intro .circle2 {
+    position: absolute;
+    bottom: -47.5px;
+    left: 74.5px;
+    height: 60px;
+    width: 60px;
+    border: 2px solid gold;
+    border-radius: 50%; }
+  #intro .text_play {
+    position: absolute;
+    bottom: -50px;
+    left: 150px;
+    color: #fff;
+    letter-spacing: 2px; }
+    #intro .text_play p {
+      font-weight: 400; }
+    #intro .text_play h3 {
+      font-size: 30px; }
+
+section.book_now {
+  position: relative;
+  padding: 0;
+  background: lightgray;
+  height: 130px;
+  margin-left: 90px;
+  margin-right: 90px;
+  top: -70px;
+  z-index: 10;
+  text-align: center; }
+  section.book_now .left {
+    background: #fff;
+    height: 100%;
+    width: 350px;
+    color: gray; }
+    section.book_now .left p {
+      position: absolute;
+      top: 50%;
+      left: 15%;
+      transform: translate(-50%, -50%);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 20px; }
