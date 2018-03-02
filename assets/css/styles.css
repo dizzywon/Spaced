@@ -21,7 +21,7 @@ h6,
 p {
   margin: 0;
   padding: 0;
-  font-family: 'Segoe UI', 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-family: 'Abel';
   text-rendering: optimizeLegibility; }
 
 body {
@@ -32,6 +32,9 @@ a {
   cursor: pointer;
   text-decoration: none;
   outline: 0; }
+
+ul, li {
+  list-style-type: none; }
 
 @font-face {
   font-family: "BryantLight";
@@ -74,6 +77,98 @@ a {
   font-style: normal;
   font-weight: 700;
   src: url("../fonts/Bryant/BryantBoldAlt.ttf") format("truetype"); }
+
+section {
+  padding: 50px 0; }
+
+.d-flex {
+  display: flex; }
+
+.justify-content-start {
+  justify-content: flex-start; }
+
+.justify-content-center {
+  justify-content: center; }
+
+.justify-content-end {
+  justify-content: flex-end; }
+
+.justify-content-around {
+  justify-content: space-around; }
+
+.justify-content-between {
+  justify-content: space-between; }
+
+.text-align-left {
+  text-align: left; }
+
+.text-align-right {
+  text-align: right; }
+
+.text-align-center {
+  text-align: center; }
+
+.container {
+  width: 85%;
+  margin: 0 auto;
+  padding: 30px 0; }
+
+.row {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: wrap; }
+
+.column {
+  flex: 50%; }
+
+.columns {
+  flex: 100%;
+  width: 100%; }
+
+.column40 {
+  flex: 0 0 40%; }
+
+.column60 {
+  flex: 0 0 60%; }
+
+.list,
+.list_2 {
+  display: flex;
+  justify-content: flex-end;
+  line-height: 1; }
+
+.float_right {
+  float: right; }
+
+.float_left {
+  float: left; }
+
+.mt-10 {
+  margin-top: 10px; }
+
+.mt-20 {
+  margin-top: 20px; }
+
+.mt-30 {
+  margin-top: 30px; }
+
+.mt-40 {
+  margin-top: 40px; }
+
+.mt-50 {
+  margin-top: 50px; }
+
+.ml-50 {
+  margin-left: 38%; }
+
+hr.center {
+  background: #FFFFFF;
+  border: none;
+  height: 8px;
+  width: 20px; }
 
 #intro {
   /* Background Image */
@@ -150,7 +245,7 @@ a {
     #intro .text_play h3 {
       font-size: 30px; }
 
-section.book_now {
+.book_now {
   position: relative;
   padding: 0;
   background: lightgray;
@@ -160,12 +255,12 @@ section.book_now {
   top: -70px;
   z-index: 10;
   text-align: center; }
-  section.book_now .left {
+  .book_now .left {
     background: #fff;
     height: 100%;
     width: 350px;
     color: gray; }
-    section.book_now .left p {
+    .book_now .left p {
       position: absolute;
       top: 50%;
       left: 15%;
@@ -173,3 +268,50 @@ section.book_now {
       text-transform: uppercase;
       letter-spacing: 3px;
       font-size: 20px; }
+
+.about_us .column40 h3 {
+  text-align: right;
+  text-transform: uppercase;
+  line-height: 70px;
+  font-size: 55px;
+  font-weight: 700; }
+
+.about_us .column60 {
+  margin-left: 80px; }
+  .about_us .column60 p {
+    text-align: left;
+    color: #4d4d4d;
+    line-height: 50px;
+    font-size: 20px;
+    font-weight: 300; }
+
+.about_us .right {
+  background: #FFFFFF;
+  float: right;
+  width: 20px;
+  height: 5px;
+  margin-top: 40px; }
+
+.about_us .left {
+  background: #4d4d4d;
+  border: none;
+  float: left;
+  height: 10px;
+  width: 15px;
+  margin-top: 30px; }
+
+.about_us .columns .list li {
+  display: inline;
+  margin: 0px 50px 0px 50px;
+  font-size: 70px; }
+
+.about_us .columns .list_2 li {
+  display: inline;
+  margin: 0px 30px 0px 50px;
+  color: gold;
+  text-transform: uppercase; }
+
+.about_us .columns .float_right p {
+  margin-right: 370px; }
+  .about_us .columns .float_right p .fa-arrow-right {
+    margin-left: 20px; }
