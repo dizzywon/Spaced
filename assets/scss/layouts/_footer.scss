@@ -1,0 +1,27 @@
+.footer {
+    height: 250px;
+    text-transform: uppercase;
+    a {
+        color: $brand-white;
+    }
+    li {
+        margin: 0 auto;
+        display: inline;
+    }
+    .nav {
+        margin-top: 150px;
+    }
+    .logo{
+        font-size: 30px;
+    }
+    .nav_items {
+        li {
+            margin-left: 30px;
+        }
+    }
+    .copyright{
+        margin-top: 100px;
+        text-align: center;
+        text-transform: uppercase;
+    }
+}
